@@ -1,0 +1,11 @@
+meta {
+  name: getLogin
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{server}}/auth/login/get
+  body: none
+  auth: inherit
+}

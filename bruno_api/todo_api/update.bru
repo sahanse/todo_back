@@ -1,0 +1,18 @@
+meta {
+  name: update
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{server}}/todo/edit
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "id":54,
+    "todo":"wake up at 6:15 am"
+  }
+}

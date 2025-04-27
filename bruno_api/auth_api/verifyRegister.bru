@@ -1,0 +1,17 @@
+meta {
+  name: verifyRegister
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{server}}/auth/register/verify
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "otp":67648
+  }
+}

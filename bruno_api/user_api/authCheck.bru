@@ -1,0 +1,11 @@
+meta {
+  name: authCheck
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{server}}/user/auth/check
+  body: none
+  auth: inherit
+}

@@ -1,0 +1,17 @@
+meta {
+  name: complete
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{server}}/todo/complete
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "id":58
+  }
+}

@@ -1,0 +1,11 @@
+meta {
+  name: getRegister
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{server}}/auth/register/get
+  body: json
+  auth: inherit
+}

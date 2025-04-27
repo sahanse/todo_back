@@ -1,0 +1,17 @@
+meta {
+  name: delete
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{server}}/todo/delete
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "id":"32"
+  }
+}

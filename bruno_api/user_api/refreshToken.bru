@@ -1,0 +1,11 @@
+meta {
+  name: refreshToken
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{server}}/user/refreshToken
+  body: none
+  auth: inherit
+}

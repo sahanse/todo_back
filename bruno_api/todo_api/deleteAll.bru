@@ -1,0 +1,11 @@
+meta {
+  name: deleteAll
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{server}}/todo/deleteAll
+  body: none
+  auth: inherit
+}

@@ -1,0 +1,17 @@
+meta {
+  name: verifyLogin
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{server}}/auth/login/verify
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "otp":27154
+  }
+}

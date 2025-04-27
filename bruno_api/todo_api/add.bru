@@ -1,0 +1,17 @@
+meta {
+  name: add
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{server}}/todo/add
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "todo":"wake up at 6:56 am"
+  }
+}
